@@ -82,34 +82,18 @@ export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/lo
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliases
-alias refresh="source ~/.zshrc"
-alias newterm="open -a Terminal ."
-alias trs="x3270"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
-# git alias
-alias gitstubborn="git update-index --assume-unchanged `git ls-files -m`"
-
-# suffix aliases
-alias -s hs=vim
-alias -s zshrc=vim
-
-source ~/.npm-completion.zsh
-
-# my own stuff after zsh
+# random stuff :)
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig:/usr/local/Cellar/libffi/3.0.13/lib/pkgconfig"
 
-function hidefiles() {
-  defaults write com.apple.finder AppleShowAllFiles -bool NO
-  killall Finder
-}
-function showfiles() {
-  defaults write com.apple.finder AppleShowAllFiles -bool YES
-  killall Finder
-}
-
+# rust stuff
 source ~/.cargo/env
+
+# brew folder; llvm for haskell-llvm
 export PATH="/Users/nick/.local/bin:$PATH:/usr/local/Cellar/llvm35/3.5.1/bin"
+
+# added brew library folder
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 # OPAM configuration

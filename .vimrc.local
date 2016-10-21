@@ -1,26 +1,16 @@
 let g:airline_powerline_fonts = 1
 
-syntax on
 filetype plugin indent on
-set tabstop=2
-set shiftwidth=2
-set expandtab
 set ttymouse=xterm
 set nocp
 
-set laststatus=2
-
-set ignorecase
 set gdefault
 
-color Dracula
-
-" set background=dark
+" set sexy colorscheme
 colorscheme Tomorrow-Night
 
 " don't need to have .jsx for jsx to be applied
 let g:jsx_ext_required = 0
 
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+" haskell-vim-now sets this option to 1, i don't like that :) 
 let NERDTreeQuitOnOpen = 0
