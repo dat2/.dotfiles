@@ -1,0 +1,1 @@
+/Users/nick/.haskell-vim-now/.vimrc

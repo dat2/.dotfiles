@@ -1,0 +1,8 @@
+# ignore everything
+*
+
+# except for a few files
+!.gitignore
+!.zshrc
+!.vimrc
+!.vimrc.local
